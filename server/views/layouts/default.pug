@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= `${title}`
+    // https://nagoshiashumari.github.io/Rpg-Awesome/
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Yantramanav:400,900')
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel='stylesheet', href='styles/bundle.min.css')
+    link(rel="icon" type="image/png" href="/images/icons/favicon.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body.theme-default
+    block header
+      include ../partials/nav.pug
+
+    block messages
+      if locals.flashes
+        .inner
+          .flash-messages
+            - const categories = Object.keys(locals.flashes)
+            each category in categories
+              each message in flashes[category]
+                .flash(class=`flash--${category}`)
+                  p.flash__text!= message
+                  button.flash__remove(onClick="this.parentElement.remove()") &times;
+    .content
+      block content
+
+    block scripts
+      script(src="scripts/bundle.min.js")

@@ -1,0 +1,11 @@
+extends layouts/default
+
+include mixins/gamesList.pug
+block content
+  .page-index
+    #theme-switcher
+      a(href="##", data-theme="theme-default") Diahaha Forest
+      a(href="##", data-theme="theme-qwd") Quiet Whisper Deluxe
+    .block.mt-5
+      .cards-wrap.cap-width
+        +gamesList(games)

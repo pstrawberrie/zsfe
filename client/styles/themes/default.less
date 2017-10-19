@@ -1,0 +1,68 @@
+/* Default Theme */
+
+// Color Variables
+@white: #fff;
+@dark: #222;
+@dark-lighter: #363636;
+@gray: #ddd;
+
+
+// Color Utility: Backgrounds
+.bg-white { background:@white;color:@dark; }
+.bg-dark { background:@dark;color:@white; }
+.bg-gray { background:@gray;color:@dark; }
+
+// Color Utility: Text
+.text-white { color:@white; }
+.text-black { color:@dark; }
+
+
+// Diahaha color theme scheme
+@dLighter:#E7EED2;
+@dLight:#7ECBA1;
+@dMedium:#368C72;
+@dDark:#466551;
+
+body.theme-default {
+  background:@dDark;
+  color:@white;
+
+  // Navigation Component
+  nav { background:@dLighter; }
+  nav a { color:@dark; }
+  nav a:hover { background:@dLight;border-color:@dLight; }
+
+  // Card Component
+  .card {
+    background:@dMedium;
+    color:@white;
+    &.bordered {border-color:@dLighter;}
+  }
+  .card__footer.has-border { border-color: @dLighter; }
+
+}
+
+// #Queit Whisper Deluxe Blue Plaid Color scheme
+@qwdDark:#163172;
+@qwdMedium:#1E56A0;
+@qwdLight:#D6E4F0;
+@qwdLighter:#F6F6F6;
+
+body.theme-qwd {
+  background:@qwdDark;
+  color:@white;
+
+  // Navigation Component
+  nav { background:@qwdLighter; }
+  nav a { color:@dark; }
+  nav a:hover { background:@qwdLight;border-color:@qwdLight; }
+
+  // Card Component
+  .card {
+    background:@qwdMedium;
+    color:@white;
+    &.bordered {border-color:@qwdLighter;}
+  }
+  .card__footer.has-border { border-color: @qwdLighter; }
+
+}

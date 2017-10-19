@@ -1,0 +1,218 @@
+[
+    {
+        "id": 2,
+        "game": "Adventure of Link",
+        "nickname": "aol",
+        "image_path": "/images/aol.gif",
+        "createdAt": "2017-07-10T01:21:51.000Z",
+        "updatedAt": "2017-07-10T01:21:51.000Z"
+    },
+    {
+        "id": 3,
+        "game": "A Link to the Past",
+        "nickname": "alttp",
+        "image_path": "/images/alttp.png",
+        "createdAt": "2017-07-10T01:22:23.000Z",
+        "updatedAt": "2017-07-10T01:22:23.000Z"
+    },
+    {
+        "id": 4,
+        "game": "Link's Awakening",
+        "nickname": "la",
+        "image_path": "/images/la.png",
+        "createdAt": "2017-07-10T01:22:57.000Z",
+        "updatedAt": "2017-07-10T01:22:57.000Z"
+    },
+    {
+        "id": 5,
+        "game": "Ocarina of Time",
+        "nickname": "oot",
+        "image_path": "/images/oot.png",
+        "createdAt": "2017-07-10T01:23:19.000Z",
+        "updatedAt": "2017-07-10T01:23:19.000Z"
+    },
+    {
+        "id": 7,
+        "game": "Link's Awakening DX",
+        "nickname": "ladx",
+        "image_path": "/images/laxd.png",
+        "createdAt": "2017-07-10T01:23:53.000Z",
+        "updatedAt": "2017-07-10T01:23:53.000Z"
+    },
+    {
+        "id": 9,
+        "game": "Majora's Mask",
+        "nickname": "mm",
+        "image_path": "/images/mm.png",
+        "createdAt": "2017-07-10T01:24:34.000Z",
+        "updatedAt": "2017-07-10T01:24:34.000Z"
+    },
+    {
+        "id": 10,
+        "game": "Oracle of Seasons",
+        "nickname": "oos",
+        "image_path": "/images/oos.png",
+        "createdAt": "2017-07-10T01:24:49.000Z",
+        "updatedAt": "2017-07-10T01:24:49.000Z"
+    },
+    {
+        "id": 11,
+        "game": "Oracle of Ages",
+        "nickname": "ooa",
+        "image_path": "/images/ooa.png",
+        "createdAt": "2017-07-10T01:24:58.000Z",
+        "updatedAt": "2017-07-10T01:24:58.000Z"
+    },
+    {
+        "id": 12,
+        "game": "Ocarina of Time MQ",
+        "nickname": "ootmq",
+        "image_path": "/images/ootmq.png",
+        "createdAt": "2017-07-10T01:25:13.000Z",
+        "updatedAt": "2017-07-10T01:25:13.000Z"
+    },
+    {
+        "id": 14,
+        "game": "The Wind Waker",
+        "nickname": "tww",
+        "image_path": "/images/tww.png",
+        "createdAt": "2017-07-10T01:25:29.000Z",
+        "updatedAt": "2017-07-10T01:25:29.000Z"
+    },
+    {
+        "id": 15,
+        "game": "Four Swords Adventures",
+        "nickname": "fsa",
+        "image_path": "/images/fsa.gif",
+        "createdAt": "2017-07-10T01:26:40.000Z",
+        "updatedAt": "2017-07-10T01:26:40.000Z"
+    },
+    {
+        "id": 16,
+        "game": "The Minish Cap",
+        "nickname": "tmc",
+        "image_path": "/images/tmc.png",
+        "createdAt": "2017-07-10T01:26:52.000Z",
+        "updatedAt": "2017-07-10T01:26:52.000Z"
+    },
+    {
+        "id": 17,
+        "game": "Twilight Princess",
+        "nickname": "tp",
+        "image_path": "/images/tp.png",
+        "createdAt": "2017-07-10T01:27:06.000Z",
+        "updatedAt": "2017-07-10T01:27:06.000Z"
+    },
+    {
+        "id": 18,
+        "game": "Phantom Hourglass",
+        "nickname": "ph",
+        "image_path": "/images/ph.png",
+        "createdAt": "2017-07-10T01:27:20.000Z",
+        "updatedAt": "2017-07-10T01:27:20.000Z"
+    },
+    {
+        "id": 19,
+        "game": "Spirit Tracks",
+        "nickname": "st",
+        "image_path": "/images/st.png",
+        "createdAt": "2017-07-10T01:27:32.000Z",
+        "updatedAt": "2017-07-10T01:27:32.000Z"
+    },
+    {
+        "id": 20,
+        "game": "Ocarina of Time 3D",
+        "nickname": "oot3d",
+        "image_path": "/images/oot3d.png",
+        "createdAt": "2017-07-10T01:27:50.000Z",
+        "updatedAt": "2017-07-10T01:27:50.000Z"
+    },
+    {
+        "id": 21,
+        "game": "Skyward Sword",
+        "nickname": "ss",
+        "image_path": "/images/ss.png",
+        "createdAt": "2017-07-10T01:28:05.000Z",
+        "updatedAt": "2017-07-10T01:28:05.000Z"
+    },
+    {
+        "id": 22,
+        "game": "The Wind Waker HD",
+        "nickname": "twwhd",
+        "image_path": "/images/twwhd.png",
+        "createdAt": "2017-07-10T01:28:23.000Z",
+        "updatedAt": "2017-07-10T01:28:23.000Z"
+    },
+    {
+        "id": 23,
+        "game": "A Link Between Worlds",
+        "nickname": "albw",
+        "image_path": "/images/albw.png",
+        "createdAt": "2017-07-10T01:28:38.000Z",
+        "updatedAt": "2017-07-10T01:28:38.000Z"
+    },
+    {
+        "id": 24,
+        "game": "Majora's Mask 3D",
+        "nickname": "mm3d",
+        "image_path": "/images/mm3d.png",
+        "createdAt": "2017-07-10T01:29:00.000Z",
+        "updatedAt": "2017-07-10T01:29:00.000Z"
+    },
+    {
+        "id": 25,
+        "game": "Twilight Princess HD",
+        "nickname": "tphd",
+        "image_path": "/images/tphd.png",
+        "createdAt": "2017-07-10T01:29:19.000Z",
+        "updatedAt": "2017-07-10T01:29:19.000Z"
+    },
+    {
+        "id": 26,
+        "game": "Breath of the Wild",
+        "nickname": "botw",
+        "image_path": "/images/botw.png",
+        "createdAt": "2017-07-10T01:29:32.000Z",
+        "updatedAt": "2017-07-10T01:29:32.000Z"
+    },
+    {
+        "id": 27,
+        "game": "The Legend of Zelda",
+        "nickname": "tloz",
+        "image_path": "/images/tloz.png",
+        "createdAt": "2017-07-10T01:32:38.000Z",
+        "updatedAt": "2017-07-10T01:32:38.000Z"
+    },
+    {
+        "id": 28,
+        "game": "Four Swords",
+        "nickname": "fs",
+        "image_path": "/images/fs.png",
+        "createdAt": "2017-10-01T09:10:47.000Z",
+        "updatedAt": "2017-10-01T09:10:47.000Z"
+    },
+    {
+        "id": 29,
+        "game": "The Wand Of Gamelon",
+        "nickname": "twog",
+        "image_path": "/images/twog.png",
+        "createdAt": "2017-10-01T09:12:07.000Z",
+        "updatedAt": "2017-10-01T09:12:07.000Z"
+    },
+    {
+        "id": 30,
+        "game": "The Faces Of Evil",
+        "nickname": "tfoe",
+        "image_path": "/images/tfoe.png",
+        "createdAt": "2017-10-01T09:12:33.000Z",
+        "updatedAt": "2017-10-01T09:12:33.000Z"
+    },
+    {
+        "id": 31,
+        "game": "Zelda's Adventure",
+        "nickname": "za",
+        "image_path": "/images/za.png",
+        "createdAt": "2017-10-01T09:12:58.000Z",
+        "updatedAt": "2017-10-01T09:12:58.000Z"
+    }
+]
