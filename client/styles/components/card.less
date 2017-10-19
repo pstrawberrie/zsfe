@@ -59,7 +59,8 @@
     }
   }
   &.bordered {
-    border:3px solid transparent;
+    border:1.25rem solid transparent;
+    .card__header { padding:.5rem; .text-center;}
   }
   &.shadowed {
     .shadow-1;
@@ -74,7 +75,7 @@
 
 .card__footer {
   &.has-border {
-    border-top:1px solid transparent;
+    border-top:3px solid transparent;
   }
   &.is-absolute {
     position:absolute;
@@ -86,9 +87,11 @@
 
 // +Container Variants
 .cards-wrap {
-  .section;.space-around;
-  .flex-wrap;.flex-row;
+  .block;.relative;
+  margin:0 auto;
   overflow:hidden;
+  .section;.justify-center;
+  .flex-wrap;.flex-row;
   margin-top:-2rem;
   .card {
     margin-bottom:0;
@@ -96,8 +99,12 @@
   }
 }
 .cap-width {
+  .relative;
   .card {
-    max-width:300px;
+    width:200px;
+    @media all and (max-width:767px) {
+      max-width:100%;width:45%;
+    }
     @media all and (max-width:660px) {
       max-width:100%;width:100%;
     }

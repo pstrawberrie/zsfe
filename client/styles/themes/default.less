@@ -1,55 +1,68 @@
-/* Default Theme */
+/* Themes */
 
-// Color Variables
+// Base Colors
 @white: #fff;
+@black: #000;
 @dark: #222;
 @dark-lighter: #363636;
 @gray: #ddd;
+.white { background:@white;color:@dark; }
+.dark { background:@dark;color:@white; }
+.gray { background:@gray;color:@dark; }
 
-
-// Color Utility: Backgrounds
-.bg-white { background:@white;color:@dark; }
-.bg-dark { background:@dark;color:@white; }
-.bg-gray { background:@gray;color:@dark; }
-
-// Color Utility: Text
-.text-white { color:@white; }
-.text-black { color:@dark; }
-
-
-// Diahaha color theme scheme
-@dLighter:#E7EED2;
-@dLight:#7ECBA1;
-@dMedium:#368C72;
-@dDark:#466551;
+// Forest Theme
+@forestPrimary:#2e7d32;
+@forestPrimaryLight:#60ad5e;
+@forestPrimaryDark:#005005;
+@forestSecondary:#e8f5e9;
+@forestSecondaryLight:@white;
+@forestSecondaryDark:#b6c2b7;
+.forestPrimary {background:@forestPrimary;color:@white;}
+.forestPrimaryLight {background:@forestPrimaryLight;color:@black;}
+.forestPrimaryDark {background:@forestPrimaryDark;color:@white;}
+.forestSecondary {background:@forestSecondary;color:@black;}
+.forestSecondaryLight {background:@forestSecondaryLight;color:@black;}
+.forestSecondaryDark {background:@forestSecondaryDark;color:@black;}
 
 body.theme-default {
-  background:@dDark;
+  .forestSecondary;
   color:@white;
 
   // Navigation Component
-  nav { background:@dLighter; }
-  nav a { color:@dark; }
-  nav a:hover { background:@dLight;border-color:@dLight; }
+  nav { .forestPrimaryDark; }
+  nav a:hover { .forestPrimary; }
+
+  // Navigation: Settings Menu
+  [data-menu=settings-menu] {
+    .forestPrimary;
+    a.active { background:rgba(0,0,0,.1);border-color:rgba(255,255,255,.31) }
+    a:hover, a.active:hover { background:rgba(0,0,0,.2); }
+    a.active:before { background:@white; }
+  }
+
+  // Sidebar Component
+  #sidebar {
+    .forestPrimaryLight;
+    a.full:hover {background:rgba(255,255,255,.2)}
+  }
 
   // Card Component
   .card {
-    background:@dMedium;
-    color:@white;
-    &.bordered {border-color:@dLighter;}
+    .forestSecondaryLight;
+    &.bordered {border-color:@forestSecondary;}
   }
-  .card__footer.has-border { border-color: @dLighter; }
+  .card__footer.has-border { border-color:@forestSecondary; }
 
 }
 
 // #Queit Whisper Deluxe Blue Plaid Color scheme
-@qwdDark:#163172;
+@qwforestDark:#163172;
 @qwdMedium:#1E56A0;
 @qwdLight:#D6E4F0;
 @qwdLighter:#F6F6F6;
 
 body.theme-qwd {
-  background:@qwdDark;
+  background:@qwforestDark;
   color:@white;
 
   // Navigation Component

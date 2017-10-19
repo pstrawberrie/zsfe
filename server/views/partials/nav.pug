@@ -2,9 +2,15 @@ nav.navigation
   .nav-left
     a(href="/").logo ZeldaStrats.com
   .nav-right
-    a(href="#login")
+    a.icon(href="#login")
       span.fa.fa-sign-in
-      span &nbsp; Login
-    a(href="#login")
-      span.fa.fa-child
-      span &nbsp; Register
+      span Login
+    a.icon(href="#register")
+      span.fa.fa-plus
+      span Register
+    a(href="#settings", data-opens="settings-menu")
+      span.fa.fa-cog
+    .section.hide(data-menu="settings-menu")
+      #theme-switcher
+        a.active(href="##", data-theme="theme-default") Forest
+        a(href="##", data-theme="theme-qwd") Ocean

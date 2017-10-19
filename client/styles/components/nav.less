@@ -1,9 +1,15 @@
 /* Navigation */
 
 nav.navigation {
-  .section;
+  .section;.relative;
+  z-index:2;
   .space-between;
   .flex-row;
+  .shadow-1;
+  .transition(.2s all ease-in-out);
+}
+body.sidebar-on nav.navigation {
+  .shadow-2;
 }
 
 // Shared
@@ -40,6 +46,24 @@ nav a {
     .font-triforce;
     font-size:2rem;
   }
+
+  &.icon {
+    .section;.flex-column;
+    span {
+      font-size:1.4rem;
+      &:not(.fa) {
+        text-transform:uppercase;
+        font-size:.7rem;
+        margin-top:.65rem;
+      }
+    }
+    span.fa {
+
+    }
+  }
+  &[data-opens=settings-menu] {//settings
+    font-size:2.2rem;
+  }
 }
 
 nav .nav-hamburger {
@@ -48,6 +72,11 @@ nav .nav-hamburger {
   .pl-2;.pr-15;
   border-bottom:0;
   .relative;
+}
+
+// Logo
+nav .logo {
+  padding-top:1.5rem;
 }
 
 // Media Queries

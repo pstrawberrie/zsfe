@@ -6,14 +6,11 @@ mixin gamesList(games)
       .card__body
         .section.justify-center
           img(src=game.image_path)
-      .card__footer.has-border.space-around
-        .section
+      .card__footer.has-border
+        .section.flex-column
           .section.mr-1
             span.fa.fa-sticky-note
             span &nbsp; 13 Edits
           .section.mr-1
             span.fa.fa-star
             span &nbsp; 41 Stars
-        .section
-          span.fa.fa-pencil
-          span &nbsp; Edit Now

@@ -1,10 +1,13 @@
 import $ from 'jquery';
 
-// Theme Switcher
-$('#theme-switcher').on('click', function() {
-  $(this).toggleClass('hide');
+/* + Settings Menu + */
+//- Settings Menu: Main
+$('[data-opens]').off('click').on('click', function() {
+  const currentMenu = $(this).attr('data-opens');
+  $(`[data-menu="${currentMenu}"]`).toggleClass('hide');
 });
-$('[data-theme]').on('click', function() {
+//- Settings Menu: Theme Switcher
+$('[data-theme]').off('click').on('click', function() {
   const theme = $(this).attr('data-theme');
   $('body').removeClass().addClass(theme);
 });
