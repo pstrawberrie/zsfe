@@ -1,13 +1,33 @@
 #sidebar {
-  .section;.flex-column;
-  min-width:200px;
+  display:none;.flex-column;
+  .fixed;left:0;top:0;bottom:0;
+  width:250px;height:100%;
   .shadow-1;
+  z-index:3;
 
   a.full {
     .section;width:100%;
-    .p-1;.font-bold;
-    font-size:1.25rem;
+    .p-1;
     .transition(.15s background ease-in-out);
+  }
+
+}
+
+.accordion {display:none;}
+
+html.sidebar-on {
+  body {padding-left:250px;}
+  #sidebar {.flex-display();}
+
+  @media all and (max-width:950px) {
+    body {padding-left:0;}
+    #sidebar {.section;.fixed;}
+    .content:after {
+      content:"";
+      .absolute;
+      top:0;left:0;right:0;bottom:0;
+      width:100%;height:100%;
+    }
   }
 
 }

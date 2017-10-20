@@ -30,7 +30,7 @@ body.theme-default {
 
   // Navigation Component
   nav { .forestPrimaryDark; }
-  nav a:hover { .forestPrimary; }
+  nav a:not(.logo):hover, nav a.active { .forestPrimary; }
 
   // Navigation: Settings Menu
   [data-menu=settings-menu] {
@@ -42,8 +42,10 @@ body.theme-default {
 
   // Sidebar Component
   #sidebar {
-    .forestPrimaryLight;
-    a.full:hover {background:rgba(255,255,255,.2)}
+    .forestPrimary;
+    a.full:hover, .accordion-trigger.active {
+      background:rgba(255,255,255,.2)
+    }
   }
 
   // Card Component
@@ -53,22 +55,48 @@ body.theme-default {
   }
   .card__footer.has-border { border-color:@forestSecondary; }
 
+  // Modal Component
+  .modal {
+    background:rgba(0,0,0,.88);
+    .modal-content {background:@white;color:@dark;}
+  }
+
+  // Form Component
+  input {border-color:@forestPrimary;}
+  input[type=submit] {.forestPrimary;}
+
 }
+html.sidebar-on body.theme-default .content:after { background:rgba(0,0,0,.88); }
 
 // #Queit Whisper Deluxe Blue Plaid Color scheme
-@qwforestDark:#163172;
+@qwdDark:#163172;
 @qwdMedium:#1E56A0;
 @qwdLight:#D6E4F0;
 @qwdLighter:#F6F6F6;
 
 body.theme-qwd {
-  background:@qwforestDark;
+  background:@qwdLighter;
   color:@white;
 
   // Navigation Component
-  nav { background:@qwdLighter; }
-  nav a { color:@dark; }
-  nav a:hover { background:@qwdLight;border-color:@qwdLight; }
+  nav { background:@qwdDark;color:@white; }
+  nav a:not(.logo):hover, nav a.active { background:@qwdMedium; }
+
+  // Navigation: Settings Menu
+  [data-menu=settings-menu] {
+    background:@qwdDark;color:@white;
+    a.active { background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.31) }
+    a:hover, a.active:hover { background:rgba(0,0,0,.25); }
+    a.active:before { background:@white; }
+  }
+
+  // Sidebar Component ++
+  #sidebar {
+    background:@qwdMedium;color:@white;
+    a.full:hover, .accordion-trigger.active {
+      background:rgba(255,255,255,.2)
+    }
+  }
 
   // Card Component
   .card {
@@ -77,5 +105,15 @@ body.theme-qwd {
     &.bordered {border-color:@qwdLighter;}
   }
   .card__footer.has-border { border-color: @qwdLighter; }
+
+  // Modal Component
+  .modal {
+    background:rgba(0,0,0,.88);
+    .modal-content {background:@white;color:@dark;}
+  }
+
+  // Form Component ++
+  input {border-color:@qwdMedium;}
+  input[type=submit] {background:@qwdMedium;color:@white;}
 
 }

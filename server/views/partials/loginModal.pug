@@ -1,0 +1,13 @@
+#loginModal.modal
+  .modal-content
+    h4 Log In
+    form.section(name="loginForm", action="/login", method="POST")
+      .section
+        label(for="loginName") Username
+        input(type="text", name="loginName")
+      .section
+        label(for="loginPassword") Password
+        input(type="password", name="loginPassword")
+      .section
+        input(type="submit", value="Login")
+      

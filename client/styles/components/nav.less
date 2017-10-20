@@ -1,5 +1,8 @@
 /* Navigation */
-
+header {
+  .block;.relative;
+  width:100%;
+}
 nav.navigation {
   .section;.relative;
   z-index:2;
@@ -80,12 +83,12 @@ nav .logo {
 }
 
 // Media Queries
-@media all and (max-width:900px) {
+@media all and (max-width:950px) {
   nav .nav-hamburger { .flex-display(); }
   nav .nav-right a:not(.nav-hamburger) {
     display:none;
   }
-  nav .nav-left a:not(.nav-logo) {
+  nav .nav-left a:not(.logo) {
     display:none;
   }
 }

@@ -4,8 +4,17 @@ include mixins/gamesList.pug
 block content
   .section.page-index
     #sidebar
-      .section
-        a.full(href="##") Standard Link
-    .section.mt-4
-      .cards-wrap.cap-width
+      .section.flex-column
+        a.full.accordion-trigger(href="#acc1") Drop me down bb
+        .accordion#acc1
+          a.full(href="##") Linkeroo
+          a.full(href="##") Linkerooni
+          a.full(href="##") Linkerino
+        a.full.accordion-trigger(href="#acc2") Hey dont frgt abt me m8
+        .accordion#acc2
+          a.full(href="##") I didnt'
+          a.full(href="##") lol lolol
+          a.full(href="##") how could i evur
+    .section.mt-3
+      .cards-wrap.cap-width.pb-2
         +gamesList(games)

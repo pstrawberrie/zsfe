@@ -2,14 +2,16 @@ nav.navigation
   .nav-left
     a(href="/").logo ZeldaStrats.com
   .nav-right
-    a.icon(href="#login")
+    a.modal-trigger.icon(href="#loginModal")
       span.fa.fa-sign-in
       span Login
-    a.icon(href="#register")
+    a.modal-trigger.icon(href="#registerModal")
       span.fa.fa-plus
       span Register
     a(href="#settings", data-opens="settings-menu")
       span.fa.fa-cog
+    a.nav-hamburger(href="#!")
+      span.fa.fa-bars
     .section.hide(data-menu="settings-menu")
       #theme-switcher
         a.active(href="##", data-theme="theme-default") Forest

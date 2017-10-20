@@ -1,0 +1,12 @@
+#registerModal.modal
+  .modal-content
+    h4 Log In
+    form.section(name="registerForm", action="/register", method="POST")
+      .section
+        label(for="registerName") Username
+        input(type="text", name="registerName")
+      .section
+        label(for="registerPassword") Password
+        input(type="password", name="registerPassword")
+      .section
+        input(type="submit", value="Register")

@@ -2,7 +2,7 @@ doctype html
 html
   head
     title= `${title}`
-    // https://nagoshiashumari.github.io/Rpg-Awesome/
+    //- https://nagoshiashumari.github.io/Rpg-Awesome/
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Yantramanav:400,900')
     link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel='stylesheet', href='styles/bundle.min.css')
@@ -10,7 +10,8 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body.theme-default
     block header
-      include ../partials/nav.pug
+      header
+        include ../partials/nav.pug
 
     block messages
       if locals.flashes
@@ -25,5 +26,8 @@ html
     .content
       block content
 
+    include ../partials/loginModal.pug
+    include ../partials/registerModal.pug
+      
     block scripts
       script(src="scripts/bundle.min.js")
