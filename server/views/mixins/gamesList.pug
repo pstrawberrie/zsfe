@@ -1,12 +1,12 @@
 mixin gamesList(games)
   each game in games
-    a.card.shadowed.rounded.bordered(href=`#${game.nickname}`)
+    a.card.shadowed.rounded(href=`${game.nickname}`)
       .card__header
         .card__title= game.game
       .card__body
         .section.justify-center
           img(src=game.image_path)
-      .card__footer.has-border
+      .card__footer
         .section.flex-column
           .section.mr-1
             span.fa.fa-sticky-note

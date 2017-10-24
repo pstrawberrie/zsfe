@@ -5,22 +5,11 @@ $(document).ready(function() {
 
   /* + Initialize Stuff + */
   $("html").off('click');
-  const initMobile = window.innerWidth < 950 ? true : false;
-  if(initMobile) {
-    $('html').removeClass('sidebar-on');
-  }
-  if(!initMobile) {
-    $('html').addClass('sidebar-on');
-  }
 
   /* + Window Resize + */
-  $(window).off('resize').on('resize', debounce(function() {
-    if(window.innerWidth < 950) {
-      $('html').removeClass('sidebar-on');
-    } else {
-      $('html').addClass('sidebar-on');
-    }
-  }, 100));
+  // $(window).off('resize').on('resize', debounce(function() {
+  //   //do resize stuff here
+  // }, 100));
 
   /* + Settings Menu + */
 
@@ -78,7 +67,7 @@ $(document).ready(function() {
   $("html").on('click',function(e) {
     if (
       $(e.target).closest(`#sidebar, .nav-hamburger`).length === 0
-      && $('html').hasClass('sidebar-on') 
+      && $('html').hasClass('sidebar-on')
       && window.innerWidth < 950
     ) {
       $('html').removeClass('sidebar-on');

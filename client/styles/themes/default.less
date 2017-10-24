@@ -2,10 +2,12 @@
 
 // Base Colors
 @white: #fff;
+@light: #f0f0f0;
 @black: #000;
 @dark: #222;
 @dark-lighter: #363636;
 @gray: #ddd;
+@gray-lighter:#eaeaea;
 .white { background:@white;color:@dark; }
 .dark { background:@dark;color:@white; }
 .gray { background:@gray;color:@dark; }
@@ -25,12 +27,11 @@
 .forestSecondaryDark {background:@forestSecondaryDark;color:@black;}
 
 body.theme-default {
-  .forestSecondary;
-  color:@white;
+  background:@light;
 
   // Navigation Component
-  nav { .forestPrimaryDark; }
-  nav a:not(.logo):hover, nav a.active { .forestPrimary; }
+  nav { .forestPrimary; }
+  nav a:not(.logo):hover, nav a.active { .forestPrimaryDark; }
 
   // Navigation: Settings Menu
   [data-menu=settings-menu] {
@@ -42,18 +43,17 @@ body.theme-default {
 
   // Sidebar Component
   #sidebar {
-    .forestPrimary;
+    background:@white;
     a.full:hover, .accordion-trigger.active {
-      background:rgba(255,255,255,.2)
+      background:rgba(0,0,0,.1)
     }
   }
 
   // Card Component
   .card {
-    .forestSecondaryLight;
-    &.bordered {border-color:@forestSecondary;}
+    background:@white;
   }
-  .card__footer.has-border { border-color:@forestSecondary; }
+  .card__footer { background:@forestPrimary;color:@white; }
 
   // Modal Component
   .modal {
@@ -64,6 +64,9 @@ body.theme-default {
   // Form Component
   input {border-color:@forestPrimary;}
   input[type=submit] {.forestPrimary;}
+
+  // Index Page
+  .index-left {  }
 
 }
 html.sidebar-on body.theme-default .content:after { background:rgba(0,0,0,.88); }

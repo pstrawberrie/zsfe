@@ -1,0 +1,7 @@
+mixin recentEditList(edits)
+  .indexBox
+    h5 Recent Edits
+    each edit in edits
+      .item
+        span= edit.name
+        span &nbsp; #{edit.editCount}

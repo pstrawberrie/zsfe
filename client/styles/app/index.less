@@ -1,5 +1,15 @@
 .page-index {
+  width:100%;
+  .index-left, .index-right { .section; }
+  .index-right { .mt-2; }
 
-  
+  .index-left {
+    min-width:250px;
+    .pt-2;.pl-1;.pr-1;
+  }
+
+  @media all and (max-width:1024px) {
+    .index-left { display:none; }
+  }
 
 }

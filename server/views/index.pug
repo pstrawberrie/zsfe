@@ -1,6 +1,7 @@
 extends layouts/default
 
 include mixins/gamesList.pug
+include mixins/recentEditList.pug
 block content
   .section.page-index
     #sidebar
@@ -15,6 +16,8 @@ block content
           a.full(href="##") I didnt'
           a.full(href="##") lol lolol
           a.full(href="##") how could i evur
-    .section.mt-3
-      .cards-wrap.cap-width.pb-2
+    .section.index-left
+      +recentEditList(edits)
+    .section.index-right
+      .cards-wrap.pb-2
         +gamesList(games)
